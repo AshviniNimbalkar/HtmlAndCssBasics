@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>targated Selectors</title>
+    <style>
+      /* div p{
+          background: #ddd;
+      } */
+      /* Direct Child */
+      /* div >p{
+          background: #ddd;
+      } */
+      /* immediaten after */
+      /* div  +p{
+         background: #ddd;
+      } */
+     /* By Attribute */
+     a[target]{
+      background: red;
+      color: white;
+     }
+     /* specific attr value */
+     input[type='text'],input[type='email']{
+         width: 100%;
+         margin-bottom: 5px;
+     }
+
+    </style>
+</head>
+<body>
+    <div>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, laboriosam aliquid modi voluptas repellendus quasi.</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed distinctio repellendus amet eum, earum omnis!</p>
+        <p>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus harum labore asperiores blanditiis quaerat possimus!
+        </p>
+        <ul>
+            <li>Item 1</li>
+            <li><p>Item2</p></li>
+            <li>Item3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vero rerum quos ratione laboriosam deserunt corporis ipsam ex modi quae.</p>
+    </div>
+    <a href="#">Page 1</a>
+    <a href="#">Page 2</a>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+        <input type="submit" value="submit" >
+
+    </form>
+</body>
+</html>

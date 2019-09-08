@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    .box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+
+.check {
+    position: relative;
+    /* top: 400px;  */
+    left: 40px; 
+    background: coral;
+    /* height: 500px; */
+    /* padding: 30px; */
+}
+
+.top {
+    background: yellow;
+    position: relative;
+    top: 100px;
+    width: 500px;
+    height: 400px;
+}
+
+#two {
+  position: fixed;  
+  top: -10px;
+  left: 0px;
+  background: blue;
+}
+
+    
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="top">
+        <div class="check">
+            <div class="box" id="one">One</div>
+            <div class="box" id="two">Two</div>
+            <div class="box" id="three">Three</div>
+            <div class="box" id="four">Four</div>
+        </div>
+   </div>
+</body>
+</html>
